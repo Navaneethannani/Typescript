@@ -44,20 +44,27 @@ let User : PersonDetails = {
 console.log(User,"User")
 
 
-// different method
-let PersonDetails: [name : string, age : number ] = ["Nani", 22]
-
-let isMajor : boolean
-let age = PersonDetails[1]
+// different method 
+// array push
+let PersonDetails: [name :string, age: number | boolean] = ["Nani", 12]
 
 function findMajor(x : number): boolean{
+    let isMajor : boolean
     if (x >= 18){
-        return isMajor = true
+        isMajor = true
+        PersonDetails.push(isMajor);
     }else{
-        return isMajor = false
+        isMajor = false
+        PersonDetails.push(isMajor);
     }
+    return isMajor
+}
+let age = PersonDetails[1]
+if (typeof age === "number") {
+    let isMajor = findMajor(age);
+    console.log(isMajor)
 }
 
 console.log(PersonDetails,"details")
-console.log(findMajor(age))
 
+//

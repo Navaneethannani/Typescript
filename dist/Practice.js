@@ -20,17 +20,25 @@ let User = {
     Identity: Identity
 };
 console.log(User, "User");
-// different method
-let PersonDetails = ["Nani", 22];
-let isMajor;
-let age = PersonDetails[1];
+// different method 
+// array push
+let PersonDetails = ["Nani", 12];
 function findMajor(x) {
+    let isMajor;
     if (x >= 18) {
-        return isMajor = true;
+        isMajor = true;
+        PersonDetails.push(isMajor);
     }
     else {
-        return isMajor = false;
+        isMajor = false;
+        PersonDetails.push(isMajor);
     }
+    return isMajor;
+}
+let age = PersonDetails[1];
+if (typeof age === "number") {
+    let isMajor = findMajor(age);
+    console.log(isMajor);
 }
 console.log(PersonDetails, "details");
-console.log(findMajor(age));
+//
