@@ -29,4 +29,4 @@ let person : Person ={
     age: 22
 }
 
-console.log(person,"person")
+console.log(person,"person");
