@@ -41,4 +41,12 @@ if (typeof age === "number") {
     console.log(isMajor);
 }
 console.log(PersonDetails, "details");
-//
+//Generics
+function addDetails(name, age) {
+    return [name, age];
+}
+let Nani = [];
+Nani.push(addDetails("nani", 22));
+let Messi = [];
+Messi.push(addDetails("Messi", 34));
+console.log(Nani, Messi, "Players");
