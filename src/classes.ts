@@ -85,4 +85,4 @@ let Navi = new Employee("Navi","abc","Back-end Developer")
 
 console.log(employee.getFullName())
 console.log(employee.describe())
-console.log(Employee.getHeadCount())effe
+console.log(Employee.getHeadCount())
